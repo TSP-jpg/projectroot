@@ -10,8 +10,8 @@ import './purchase.js';
 import './issue.js';
 import './reports.js';
 
-window.addEventListener('DOMContentLoaded', () => {
+export function bootstrap() {
   initLayout();
   initTabs();
   initRefresh(loadAll);
-});
+}
