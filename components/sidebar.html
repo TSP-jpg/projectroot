@@ -1,0 +1,63 @@
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar-wrapper">
+  <div class="p-6 border-b border-gray-700 flex items-center justify-between">
+    <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+      The Support
+    </h1>
+    <button id="sidebarClose" class="md:hidden p-1 rounded-lg text-gray-400 hover:bg-gray-700" aria-label="Close sidebar">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="mt-6">
+    <div data-tab="dashboard" class="menu-item tab-active">
+      <i class="fas fa-tachometer-alt text-blue-400 w-5"></i>
+      <span>Dashboard</span>
+    </div>
+    <div data-tab="add-product" class="menu-item">
+      <i class="fas fa-cubes text-green-400 w-5"></i>
+      <span>จัดการสินค้า</span>
+    </div>
+    <div data-tab="add-vendor" class="menu-item">
+      <i class="fas fa-handshake text-yellow-400 w-5"></i>
+      <span>จัดการผู้ขาย</span>
+    </div>
+    <div data-tab="add-project" class="menu-item">
+      <i class="fas fa-building text-purple-400 w-5"></i>
+      <span>จัดการโครงการ</span>
+    </div>
+    <div data-tab="purchase" class="menu-item">
+      <i class="fas fa-shopping-cart text-orange-400 w-5"></i>
+      <span>ซื้อสินค้า</span>
+    </div>
+    <div data-tab="issue" class="menu-item">
+      <i class="fas fa-box-open text-pink-400 w-5"></i>
+      <span>เบิกสินค้า</span>
+    </div>
+
+    <div id="toggleReportsDropdown" class="menu-item justify-between">
+      <div class="flex items-center gap-3">
+        <i class="fas fa-chart-bar text-cyan-400 w-5"></i>
+        <span>รายงาน</span>
+      </div>
+      <i id="reportsDropdownArrow" class="fas fa-chevron-down transform transition-transform duration-200 text-gray-400"></i>
+    </div>
+    <div id="reportsDropdown" class="ml-4 mt-1 space-y-1 hidden">
+      <div data-tab="report" class="menu-item text-sm">รายงานสต็อก</div>
+      <div data-tab="vendors-list" class="menu-item text-sm">รายงานผู้ขาย</div>
+      <div data-tab="project-expenditure-report" class="menu-item text-sm">รายงานโครงการ</div>
+    </div>
+
+    <div data-tab="budget-estimate" class="menu-item">
+      <i class="fas fa-calculator text-cyan-400 w-5"></i>
+      <span>คำนวณงบประมาณโครงการ</span>
+    </div>
+
+    <div data-tab="settings" class="menu-item">
+      <i class="fas fa-cogs text-gray-400 w-5"></i>
+      <span>ตั้งค่า</span>
+    </div>
+  </nav>
+</div>
